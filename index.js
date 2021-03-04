@@ -76,7 +76,7 @@ hint: the strings returned need to exactly match the string in step 4.
 function getWinnersByYear(data, getYears, getWinners) {
     /* code here */
     return data.map((item, i) => {
-      return `In ${getYears(fifaData, getFinals)[i]}, ${ getWinners(fifaData, getFinals)[i]} won the world cup!`;
+      return `In ${getYears(fifaData)[i]}, ${ getWinners(fifaData)[i]} won the world cup!`;
     })
 }
 
